@@ -1,0 +1,12 @@
+[Unit]
+Description = Tshark daemon
+After=network.target auditd.service
+
+[Service]
+Type = forking
+ExecStart = /usr/local/bin/tsharkd.sh start
+ExecStop = /usr/local/bin/tsharkd.sh stop
+ExecReload = /usr/local/bin/tsharkd.sh reload
+
+[Install]
+WantedBy = multi-user.target
