@@ -1,3 +1,7 @@
+#To be installed into /etc/systemd/system/
+#Activate with systemctl deamon-reload
+#systemctl enable tsharkd.service
+
 [Unit]
 Description = Tshark daemon
 After=network.target auditd.service
