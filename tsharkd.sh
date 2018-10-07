@@ -1,4 +1,5 @@
 #!/bin/bash
+#place in /usr/local/bin/
 
 function d_start ( )
 {
@@ -19,7 +20,7 @@ function d_stop ( )
 function d_status ( )
 {
 	#ps  -ef  |  grep deluged |  grep  -v  grep
-	echo  "PID indicate indication file $(cat /tmp/tsharkde.pid 2&> /dev/null)"
+	echo  "PID indicate indication file $(cat /tmp/tsharkd.pid 2&> /dev/null)"
 }
 
 # Some Things That run always
