@@ -19,7 +19,7 @@ function d_stop ( )
 
 function d_status ( )
 {
-	#ps  -ef  |  grep deluged |  grep  -v  grep
+	ps  -ef  |  grep tshark |  grep  -v  grep
 	echo  "PID indicate indication file $(cat /tmp/tsharkd.pid 2&> /dev/null)"
 }
 
